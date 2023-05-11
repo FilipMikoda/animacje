@@ -27,3 +27,20 @@
         from {background-color: rgb(202, 199, 199); filter: blur (10px); width: 100px;}
         to  {background-color: rgb(55, 55, 55); filter: blur (10px); width: 125px;}
     }
+    svg{
+       width: 1000px;
+       height: 1000px; 
+    }
+    .mypath{
+        animation: animacja1 1s infinite alternate ease-in-out;
+        stroke: black;
+        fill: pink;
+        stroke-width: 10px;
+        stroke-dasharray: 70;
+        stroke-dashoffset: 20;
+    }
+
+    @keyframes animacja1 {
+        from{stroke-dasharray: 70;stroke-dashoffset: 70;}
+        to{stroke-dasharray: 140;stroke-dashoffset: 140;}
+    }
